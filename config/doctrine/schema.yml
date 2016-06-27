@@ -1,0 +1,66 @@
+---
+Empleado:
+  actAs: { Timestampable: ~ }
+  columns:
+    cuil:   { type: string(11), notnull: true, unique: true }
+    nombre: { type: string(45) }
+
+Localidad:
+  columns:
+    nombre: { type: string(45), notnull: true }
+    cp:     { type: string(4), notnull: true }
+
+Empleador:
+  actAs: { Timestampable: ~ }
+  columns:
+    localidad_id:     { type: integer, notnull: true }
+    cuit:             { type: string(11), notnull: true, unique: true }
+    nombre:           { type: string(45) }
+    domicilio:        { type: string(45) }
+    baja:             { type: date }
+    sf_guard_user_id: { type: integer }
+  relations:
+    User:        { onDelete: CASCADE, class: sfGuardUser, foreignType: one }
+    Localidad: { onDelete: CASCADE, local: localidad_id, foreign: id }
+
+BoletaSindical:
+  actAs: { Timestampable: ~ }
+  columns:
+    empleador_id: { type: integer, notnull: true }
+    periodo:      { type: date }
+    vencimiento:  { type: date }
+    pago:         { type: date }
+  relations:
+    Empleador: { onDelete: CASCADE, local: empleador_id, foreign: id }
+
+BoletaFondo:
+  actAs: { Timestampable: ~ }
+  columns:
+    empleador_id: { type: integer, notnull: true }
+    periodo:      { type: date }
+    vencimiento:  { type: date }
+    pago:         { type: date }
+    maza:         { type: decimal(8) scale(2), notnull: true, default: 0 }
+  relations:
+    Empleador: { onDelete: CASCADE, local: empleador_id, foreign: id }
+
+EmpBolSin:
+  actAs: { Timestampable: ~ }
+  columns:
+    empleado_id:       { type: integer, notnull: true }
+    boletasindical_id: { type: integer, notnull: true }
+    salario:           { type: decimal(8) scale(2), notnull: true, default: 0 }
+    sepelio:           { type: boolean, notnull: true, default: 0 }
+  relations:
+    Empleado:       { onDelete: CASCADE, local: empleado_id, foreign: id, foreignAlias: EmpleadosSin }
+    BoletaSindical: { onDelete: CASCADE, local: boletasindical_id, foreign: id, foreignAlias: BolSin }
+
+EmpBolFon:
+  actAs: { Timestampable: ~ }
+  columns:
+    empleado_id:    { type: integer, notnull: true }
+    boletafondo_id: { type: integer, notnull: true }
+    salario:        { type: decimal(8) scale(2), notnull: true, default: 0 }
+  relations:
+    Empleado:    { onDelete: CASCADE, local: empleado_id, foreign: id, foreignAlias: EmpleadosFon }
+    BoletaFondo: { onDelete: CASCADE, local: boletafondo_id, foreign: id, foreignAlias: BolFon }

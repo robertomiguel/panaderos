@@ -1,0 +1,175 @@
+* { margin: 0; padding: 0; font-size: 100%; }
+body {background:#ffffff;}
+
+body a {text-decoration:none;color:#131368}
+body a:hover {text-decoration:underline}
+body a:active {color:red}
+
+body input[type=text],input[type=password] {border-width:1px;
+        padding-left:10px;
+        border-radius:10px;
+ 	-moz-border-radius:10px;
+ 	-webkit-border-radius:10px;
+	border-radius:10px;
+ 	-moz-border-radius:10px;
+ 	-webkit-border-radius:10px;
+}
+
+.fondo {position:absolute;width:974px;left:10px}
+table table {font-size:90%}
+table {font-size:90%}
+
+select {font-size:90%}
+
+.menuTemplate {padding:5px;}
+
+.fondolista {
+    position: relative;
+    width:100%;
+    top:0;
+    background:white;
+}
+.zoom table img:hover {-moz-transform:scale(1.4); -webkit-transform:scale(1.4); -o-transform:scale(1.4);}
+
+.fondolista tr:nth-child(even) { background: #fff5f5}
+.fondolista tr:nth-child(odd) { background: #fff}
+.fondolista td {padding-left:3px;padding:2px}
+.fondolista thead tr:hover {cursor:pointer}
+.fondolista thead th {background-color: #ffcccc}
+.fondolista thead th:hover {background-color: #ffebeb}
+.fondolista thead th {text-align:center}
+
+.fondolista table {width:100%; text-align: left}
+
+.marcador tr:hover {background-color: #85eac6}
+
+h1 {width:100%;color:white;text-align:center;
+padding:3px;
+        border-radius:10px;
+ 	-moz-border-radius-:10px;
+ 	-webkit-border-radius:10px;
+background: #772d22;
+text-shadow: black 2px -2px 2px;
+letter-spacing: 2px
+}
+
+input:focus,select:focus{
+background-color: #FFFFFF;
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E8E8E8), to(#FFFFFF), color-stop(.5,#F1F1F1));
+background: -moz-linear-gradient(top, #E8E8E8 0%, #F1F1F1 50%, #FFFFFF 100%);
+}
+
+.fechaServer {
+font-size:80%;
+text-align:left;
+padding:5px;
+color:#772d22
+}
+
+
+
+.detalleCliente { table-layout: fixed; }
+.detalleCliente td { 
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.login * {background:white}
+.login table {color:#772d22;width:auto}
+.login table th {width:160px}
+.login input[type=submit] {background:#772d22;color:white}
+
+.login {
+  top:50px;
+  left:25%;
+  width:500px;
+  height:auto;
+  border:solid 1px;
+  padding:5px;
+-webkit-box-shadow: 5px 5px 5px #666;
+-moz-box-shadow: 5px 5px 5px #666;
+box-shadow: 5px 5px 5px #666;
+border-radius: 10px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+}
+
+.raya th,.raya td {border-top-style:dotted;
+border-color:#868686;border-width:1px
+}
+.subtop {border-top-style:dotted;border-width:1px}
+
+.tituloTabla {background:#e5e5e5;text-align:center;width:100%}
+.boleta1 {width:850px;padding:3px}
+.boleta1 th {text-align:center}
+.boleta1 {
+padding:5px;
+}
+.boleta1 table {width:800px}
+.opciones {
+background:#fff5f5;
+position:absolute;
+width:150px;
+height:200px;
+top:100px;
+left:820px;
+}
+.nuevoempleado {width:400px}
+.nuevoempleado th {text-align:center}
+.nuevoempleado #cuil,#salario {width:150px}
+
+.iniciar {position:absolute;
+top:20px;left:10px;
+width:150px;height:60px;
+background:#772d22;
+color:white;
+border-width:2px;
+border:solid 2px black;
+text-align:center;
+padding:5px;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-box-shadow: 5px 5px 5px #666;
+-moz-box-shadow: 5px 5px 5px #666;
+box-shadow: 5px 5px 5px #666;
+}
+.iniciar div {padding:5px;}
+.iniciar a {
+padding:5px;
+background-color: #E5E5E5;
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#E5E5E5), color-stop(.5,#D2D2D2));
+background: -moz-linear-gradient(top, #FFFFFF 0%, #D2D2D2 50%, #E5E5E5 100%);
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+}
+.pie {position:fixed;bottom:0;width:100%;background:white}
+.pie p{text-align:center}
+
+#fechadepago {text-align:center}
+#fechadepagofondo {text-align:center}
+#ui-datepicker-div {
+-webkit-box-shadow: 5px 5px 5px #666;
+-moz-box-shadow: 5px 5px 5px #666;
+box-shadow: 5px 5px 5px #666;
+}
+.ui-dialog  {
+-webkit-box-shadow: 5px 5px 5px #666;
+-moz-box-shadow: 5px 5px 5px #666;
+box-shadow: 5px 5px 5px #666;
+}
+.boton {
+padding:2px;font-size:80%
+}
+caption {background:#772d22;color:white}
+.tablaRecuadro {
+border-style:solid;
+border-width: 1px;
+-webkit-box-shadow: 5px 5px 5px #666;
+-moz-box-shadow: 5px 5px 5px #666;
+box-shadow: 5px 5px 5px #666;
+}
+#tablaPeriodo th {text-align:center}
+#tablaPeriodo table td {text-align:center}

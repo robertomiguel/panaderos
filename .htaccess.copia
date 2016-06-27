@@ -1,0 +1,4 @@
+AuthName "Usuario Registrado"
+AuthType Basic
+AuthUserFile /home/roberto/usuarios.web
+Require valid-user
