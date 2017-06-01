@@ -69,7 +69,7 @@ color:#772d22
 
 
 .detalleCliente { table-layout: fixed; }
-.detalleCliente td { 
+.detalleCliente td {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -121,16 +121,16 @@ left:820px;
 
 .iniciar {position:absolute;
 top:20px;left:10px;
-width:150px;height:60px;
+width:150px;height:140px;
 background:#772d22;
 color:white;
 border-width:2px;
 border:solid 2px black;
 text-align:center;
 padding:5px;
-border-radius: 5px;
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
+border-radius: 15px;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
 -webkit-box-shadow: 5px 5px 5px #666;
 -moz-box-shadow: 5px 5px 5px #666;
 box-shadow: 5px 5px 5px #666;
